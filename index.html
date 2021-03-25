@@ -5,7 +5,6 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/xyz/assets/css/style.css?v=71d92166ebe7f70049b4d38568876aa0883f29e2">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Welcome to My Pages | xyz</title>
@@ -20,7 +19,14 @@
 <script type="application/ld+json">
 {"url":"https://mgltech.github.io/xyz/","@type":"WebSite","headline":"Welcome to My Pages","name":"xyz","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-
+    <style>
+      .main_content {
+            margin: auto;
+    text-align: center;
+    padding: 1%;
+    color: gray;
+      }
+    </style>
   </head>
 
   <body>
@@ -39,6 +45,20 @@
   </body>
         <script>
         console.info("你好，请问有什么需要帮忙的吗？可以联系此人：QQ-79336673")
+          function changeBgColor(){			//改变背景颜色的函数
+		var bgColor="";
+		for(var i=0; i<6; i++){
+			bgColor += '' + Math.round(Math.random()*9);
+		}
+		document.body.style.backgroundColor='#'+bgColor;
+
+	}
+          setInterval(function() {
+            changeBgColor()
+          },3000)
+          
+		      
+document.onclick = changeBgColor;
         </script>
 </html>
 
